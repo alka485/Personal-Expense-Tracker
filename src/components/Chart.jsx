@@ -13,7 +13,7 @@ import {Chart as ChartJs,
 import {Line} from 'react-chartjs-2'
 import styled from 'styled-components'
 //---------------------------------------------------------dependency
-import {useGlobalContext} from '../context/globalContext'
+//import {useGlobalContext} from '../context/globalContext'
 import  {dateFormat}  from '../utils/dateFormat'
 
 //Register the element

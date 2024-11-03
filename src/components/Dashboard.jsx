@@ -4,7 +4,7 @@ import React ,{useEffect,useState} from 'react'
 import styled from 'styled-components'
 //-------------------dependency
 import { InnerLayout } from '../styles/Layout';
-import Chart  from './Chart.jsx';
+//import Chart  from './Chart.jsx';
 import { dollar } from '../utils/Icons'
 //import {useGlobalContext}  from '../context/globalContext'
 import History from './History.jsx';
@@ -100,7 +100,7 @@ const Dashboard = () => {
         <h1>All transactions</h1>
         <div className="stats-con">
           <div className="chart-con">
-            <Chart/>
+           {/* <Chart/> */}
             <div className="amount-con">
               <div className="income">
                 <h2>Total Income</h2>
