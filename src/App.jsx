@@ -2,6 +2,7 @@
 //import './App.css'
 import React from "react"
 import styled from "styled-components"
+import { MainLayout } from "./styles/Layout"
 
 const AppStyled = styled.div `
       display: flex;
@@ -52,6 +53,11 @@ const AppStyled = styled.div `
 function App() {
   return (
     <AppStyled>
+      <MainLayout>
+        <main>
+          
+        </main>
+      </MainLayout>
       
     </AppStyled>
   )
