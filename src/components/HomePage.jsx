@@ -3,7 +3,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import Quotes from './Quotes';
+
 
 const HomePageStyled = styled.div`
   display: flex;
@@ -45,9 +45,7 @@ const HomePage = () => {
   return (
     <HomePageStyled>
       <h1>Welcome to your own Personal Finance Tracker</h1>
-      <Quotes />
-      <button className="btn"><Link to="/signup">Sign Up</Link></button>
-      <button className="btn"><Link to="/signin">Sign In</Link></button>
+      
     </HomePageStyled>
   );
 };
