@@ -7,6 +7,7 @@ import avatar  from '../img/avatar.png'
 import {signout}from '../utils/Icons'
 import { menuItems } from '../utils/menuItems'
 
+
 const NavStyled = styled.div`
       padding: 2rem 1.5rem;
       width: 374px;

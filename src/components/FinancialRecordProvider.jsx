@@ -4,6 +4,7 @@ import styled from 'styled-components'
 //-------------------------------dependency
 import bg from '../img/bg.png'
 import {MainLayout}  from '../styles/Layout'
+import Navigation from './Navigation'
 
 const FinancialRecordStyled = styled.div`
         height: 100vh;
@@ -29,7 +30,10 @@ const FinancialRecordProvider = () => {
   return (
     <FinancialRecordStyled>
         <MainLayout>
-            
+          <Navigation/>
+          <main>
+
+          </main>     
         </MainLayout>
     </FinancialRecordStyled>
   )
