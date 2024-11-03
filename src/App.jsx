@@ -2,6 +2,7 @@
 //import './App.css'
 import React from "react"
 import styled from "styled-components"
+import {BrowserRouter as Router, Routes,Route} from "react-router-dom"
 import { MainLayout } from "./styles/Layout"
 
 const AppStyled = styled.div `
@@ -55,7 +56,7 @@ function App() {
     <AppStyled>
       <MainLayout>
         <main>
-          
+
         </main>
       </MainLayout>
       
