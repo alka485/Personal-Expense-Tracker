@@ -1,12 +1,12 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
-import React ,{useEffect} from 'react'
+import React ,{useEffect,useState} from 'react'
 import styled from 'styled-components'
 //-------------------dependency
 import { InnerLayout } from '../styles/Layout';
 import Chart  from './Chart.jsx';
 import { dollar } from '../utils/Icons'
-import {useGlobalContext}  from '../context/globalContext'
+//import {useGlobalContext}  from '../context/globalContext'
 import History from './History.jsx';
 
 const DashboardStyled = styled.div `
@@ -84,7 +84,7 @@ const DashboardStyled = styled.div `
 
 const Dashboard = () => {
 
-  const {totalExpenses , totalIncome, totalBalance,getIncomes,getExpenses,incomes,expenses} = useGlobalContext()  //destructuring
+  const {totalExpenses , totalIncome, totalBalance,getIncomes,getExpenses,incomes,expenses} = useState()  //destructuring
 
    //fetch data on initial render
    useEffect(() => {

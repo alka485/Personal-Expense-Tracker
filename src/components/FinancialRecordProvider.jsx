@@ -1,10 +1,11 @@
 /* eslint-disable no-unused-vars */
-import React from 'react'
+import React , {useState} from 'react'
 import styled from 'styled-components'
 //-------------------------------dependency
 import bg from '../img/bg.png'
 import {MainLayout}  from '../styles/Layout'
 import Navigation from './Navigation'
+import Dashboard from './Dashboard'
 
 const FinancialRecordStyled = styled.div`
         height: 100vh;
@@ -23,15 +24,30 @@ const FinancialRecordStyled = styled.div`
             }
 `;
 
-
-
-
 const FinancialRecordProvider = () => {
+  const[active, setActive] = useState(1);
+
+  const displayData = () => {
+    switch(active){
+      case 1: 
+          return <Dashboard/>
+      case 2:
+          return <Dashboard/>
+      // case 3: 
+      //     return <Income/>
+      // case 4:
+      //     return <Expenses/>
+      default:
+          return <Dashboard/>                 
+    }
+  }
+
   return (
     <FinancialRecordStyled>
         <MainLayout>
           <Navigation/>
           <main>
+            {displayData()}
 
           </main>     
         </MainLayout>
