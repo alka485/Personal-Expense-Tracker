@@ -4,9 +4,9 @@ import React ,{useEffect,useState} from 'react'
 import styled from 'styled-components'
 //-------------------dependency
 import { InnerLayout } from '../styles/Layout';
-//import Chart  from './Chart.jsx';
+import Chart  from './Chart.jsx';
 import { dollar } from '../utils/Icons'
-//import {useGlobalContext}  from '../context/globalContext'
+import {useGlobalContext}  from '../context/globalContext'
 import History from './History.jsx';
 
 const DashboardStyled = styled.div `
@@ -84,7 +84,7 @@ const DashboardStyled = styled.div `
 
 const Dashboard = () => {
 
-  const {totalExpenses , totalIncome, totalBalance,getIncomes,getExpenses,incomes,expenses} = useState()  //destructuring
+  const {totalExpenses , totalIncome, totalBalance,getIncomes,getExpenses,incomes,expenses} = useGlobalContext //destructuring
 
    //fetch data on initial render
    useEffect(() => {
@@ -100,7 +100,7 @@ const Dashboard = () => {
         <h1>All transactions</h1>
         <div className="stats-con">
           <div className="chart-con">
-           {/* <Chart/> */}
+           <Chart/>
             <div className="amount-con">
               <div className="income">
                 <h2>Total Income</h2>
