@@ -84,7 +84,7 @@ const DashboardStyled = styled.div `
 
 const Dashboard = () => {
 
-  const {totalExpenses , totalIncome, totalBalance,getIncomes,getExpenses,incomes,expenses} = useGlobalContext //destructuring
+  const {totalExpenses,totalIncome,totalBalance,getIncomes,getExpenses,incomes,expenses} = useGlobalContext(); //destructuring
 
    //fetch data on initial render
    useEffect(() => {
