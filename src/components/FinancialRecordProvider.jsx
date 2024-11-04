@@ -7,6 +7,7 @@ import {MainLayout}  from '../styles/Layout'
 import Navigation from './Navigation'
 import Dashboard from './Dashboard'
 import Income from './Income'
+import Expenses from './Expenses'
 
 const FinancialRecordStyled = styled.div`
         height: 100vh;
@@ -36,8 +37,8 @@ const FinancialRecordProvider = () => {
           return <Dashboard/>
       case 3: 
           return <Income/>
-      // case 4:
-      //     return <Expenses/>
+      case 4:
+          return <Expenses/>
       default:
           return <Dashboard/>                 
     }
