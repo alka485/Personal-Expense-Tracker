@@ -47,7 +47,7 @@ const FinancialRecordProvider = () => {
   return (
     <FinancialRecordStyled>
         <MainLayout>
-          <Navigation/>
+          <Navigation  active={active} setActive={setActive}/>
           <main>
             {displayData()}
 
