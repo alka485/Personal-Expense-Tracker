@@ -124,7 +124,7 @@ const Dashboard = () => {
           </div>
         <div className="history-con">
           <History/>
-          <h2 className='salary-title'>Min<span>Salary</span>Max</h2>
+          <h2 className='salary-title'>Min<span>Income</span>Max</h2>
           <div className="salary-item">
             {/* fetch min and max income amount */}
             <p>
